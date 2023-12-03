@@ -32,8 +32,8 @@ class Ship(Sprite):
 
 class Blast(GameImage):
 
-    def __init__(self, x, y):
-        super().__init__("assets/Tiro.png")
+    def __init__(self, x, y, arquivo = "assets/Tiro.png"):
+        super().__init__(arquivo)
         self.speed = 150
         self.x = x
         self.y = y
